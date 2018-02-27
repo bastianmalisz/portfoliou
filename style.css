@@ -1,0 +1,187 @@
+body,html{
+    /* position: relative;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+     */
+     margin:0;
+     padding:0;
+}
+.header{
+    width: 100vw;
+    height:100vh;
+    box-sizing: border-box;
+}
+/* NAVIGACJA */
+.nav{
+    position:fixed;
+    width: 400px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.664);
+    right: -400px;
+    float: right;
+    transition: right 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    color: white;
+    font-size:1.5em;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.nav-block{
+    width: 100%;
+    height: calc(100% / 6);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s all cubic-bezier(0.39, 0.575, 0.565, 1);
+    cursor: pointer;
+}
+.nav-block:hover{
+    background-color: rgba(0, 0, 0, 0.438);
+    box-shadow: 0px 5px 10px rgba(41, 41, 41, 0.869);
+}
+.hamburger-icon{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background: url("./img/hamburger.png");
+    background-size:contain;
+    cursor: pointer;
+    transition: right 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 100;
+    
+}
+.close{
+    background: url("./img/close.png");
+    background-size:contain;
+    width: 100px;
+    height: 100px;
+}
+.nav-aboutme{
+    background: url("./img/about-me.png");
+    background-size:50% 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height:100%;
+}
+.nav-skills{
+    background: url("./img/skills.png");
+    background-size:50% 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height:100%;
+}
+.nav-websites{
+    background: url("./img/website-icon.png");
+    background-size:50% 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height:100%;
+}
+.nav-apps{
+    background: url("./img/webapp.png");
+    background-size:50% 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height:100%;
+}
+.nav-contact{
+    background: url("./img/contact.png");
+    background-size:60% 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height:100%;
+}
+.nav-name{
+    width: 60%;
+    height:25%;
+    text-align: initial;
+}
+
+/* WELCOME SCREEN */
+.welcome-screen{
+    box-sizing: border-box;
+    
+    /* top: 5vw; */
+    width: 100%;
+    right:3%;
+    height: 70vh;
+    background-color: #9fa8a3;
+    
+}
+.header{
+    font-family: 'Press Start 2P', cursive;
+    position:relative;
+    width: 60%;
+    height: 30%;
+    top: 35%;
+    left: 10%;
+    font-size:3em;
+    color: white;
+    text-align: center;
+    line-height:2.5em;
+}
+.header-blink{
+    position: absolute;
+    width: 5%;
+    height:50%;
+    background-color: white;
+    right: 5%;
+    top: 0;
+    animation: blink;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    
+}
+@keyframes blink{
+    from{opacity: 1 }
+    to{ opacity: 0 }
+}
+.welcome-shadow{
+    width: 101%;
+    left: -1%;
+    top: 54%;
+    height: 25vh;
+    z-index: 5;
+    border-right: 2px solid white;
+    overflow: hidden;
+    position: absolute;
+    background-color: white;
+    transform: rotate(174.7deg) scale(1) skew(-5deg) translate(0px);
+-webkit-transform: rotate(174.7deg) scale(1) skew(-5deg) translate(0px);
+-moz-transform: rotate(174.7deg) scale(1) skew(-5deg) translate(0px);
+-o-transform: rotate(174.7deg) scale(1) skew(-5deg) translate(0px);
+-ms-transform: rotate(174.7deg) scale(1) skew(-5deg) translate(0px);
+box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.39);
+}
+.welcome-shadow:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:99%;
+    width:2%;
+    background-color: white;
+    height:100%;
+
+}
+/* ABOUT ME */
+.about-me{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
