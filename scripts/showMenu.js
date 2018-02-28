@@ -1,5 +1,6 @@
+if(window.innerWidth){
 const navBox = document.querySelector(".nav");
-const navButton = document.querySelector(".hamburger-icon");
+const navButton = document.querySelector(".hamburger__icon");
 let buttonFlag = 0;
 let open = false;
 
@@ -25,3 +26,4 @@ function showCloseNav(){
 
 
 navButton.addEventListener("click",showCloseNav);
+}
