@@ -213,9 +213,12 @@ box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.39);
     display:inline-block;
     font-size: 3em;
     font-family: 'Press Start 2P', cursive;
-    left: 35%;
+    left: 30%;
     position:relative;
     background-color: white;
+    z-index:3;
+    top:-50px;
+    padding:30px;
 }
 .web{
     width: 100%;
