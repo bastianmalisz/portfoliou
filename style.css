@@ -178,7 +178,8 @@ box-shadow: inset -5px 48px 90px 27px rgba(0, 0, 0, 0.147);
     width: 50%;
     text-align:center;
     animation: fadeOff;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
+    /* animation-delay: .5s; */
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-fill-mode: both;

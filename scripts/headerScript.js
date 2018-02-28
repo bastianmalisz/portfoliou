@@ -6,11 +6,12 @@ const teksty = ["Lubię to!",
 "Jestem w tym!",];
 setInterval(function(){
     // cube1.innerHTML = teksty[licznik]
+    
     headerText.innerHTML = teksty[licznik];
     
-    if(licznik == teksty.length -1){
+    if(licznik == teksty.length-1){
         licznik = 0;
     }
-    
     licznik++;
-},6000)
+    
+},3000)
