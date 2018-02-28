@@ -27,8 +27,8 @@ body,html{
     align-items: center;
     z-index: 100;
     color: white;
-    font-size:1.5em;
-    font-family: 'Montserrat', sans-serif;
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
 
 
 }
@@ -67,48 +67,48 @@ body,html{
 }
 .nav-aboutme{
     background: url("./img/about-me.png");
-    background-size:50% 30%;
+    background-size: 90% 70%;
     background-repeat: no-repeat;
     background-position: center;
     width: 30%;
     height:100%;
 }
 .nav-skills{
-    background: url("./img/skills.png");
-    background-size:50% 30%;
+    background: url("./img/ideaspng.png");
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 30%;
     height:100%;
 }
 .nav-websites{
-    background: url("./img/website-icon.png");
-    background-size:50% 30%;
+    background: url("./img/witrynypng.png");
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 30%;
-    height:100%;
+    width: 20%;
+    height:80%;
 }
 .nav-apps{
-    background: url("./img/webapp.png");
-    background-size:50% 30%;
+    background: url("./img/aplikacjepng.png");
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 30%;
-    height:100%;
+    width: 20%;
+    height:80%;
 }
 .nav-contact{
-    background: url("./img/contact.png");
-    background-size:60% 40%;
+    background: url("./img/kontaktpng.png");
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 30%;
-    height:100%;
+    width: 20%;
+    height:80%;
 }
 .nav-name{
     width: 60%;
     height:25%;
-    text-align: initial;
+    text-align: center;
 }
 
 /* WELCOME SCREEN */
@@ -120,12 +120,16 @@ body,html{
     right:3%;
     height: 70vh;
     background-color: #9fa8a3;
+
+    -webkit-box-shadow: inset -5px 48px 90px 27px rgba(0,0,0,0.147);
+-moz-box-shadow: inset -5px 48px 90px 27px rgba(0,0,00.147);
+box-shadow: inset -5px 48px 90px 27px rgba(0, 0, 0, 0.147);
     
 }
 .header{
     font-family: 'Press Start 2P', cursive;
     position:relative;
-    width: 60%;
+    width: 80%;
     height: 30%;
     top: 35%;
     left: 10%;
@@ -133,11 +137,12 @@ body,html{
     color: white;
     text-align: center;
     line-height:2.5em;
+    text-shadow: 0px 3px 1px black;
 }
 .header-blink{
     position: absolute;
     width: 5%;
-    height:50%;
+    height:70%;
     background-color: white;
     right: 5%;
     top: 0;
@@ -155,7 +160,7 @@ body,html{
 .welcome-shadow{
     width: 101%;
     left: -1%;
-    top: 54%;
+    top: 55%;
     height: 25vh;
     z-index: 5;
     border-right: 2px solid white;
@@ -180,8 +185,44 @@ box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.39);
 
 }
 /* ABOUT ME */
-.about-me{
+.am{
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    flex-basis: row;
+    justify-content: space-around;
+}
+.am-img{
+    width: 30%;
+    height:90%;
+    background-color:#9fa8a3; 
+}
+.am-img:after{
+
+}
+.am-desc{
+    top:20%;
+    position:relative;
+    width: 65%;
+    height: 60%;
+    
+    
+}
+.am-desc-line1{
+    display:inline-block;
+    font-size: 3em;
+    font-family: 'Press Start 2P', cursive;
+    left: 35%;
+    position:relative;
+    background-color: white;
+}
+.web{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: column;
+    justify-content: center;
+    border: 1px solid black;
 }
