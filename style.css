@@ -16,7 +16,7 @@ body,html{
 .nav{
     position:fixed;
     width: 400px;
-    height: 100vh;
+    height: 50vh;
     background: rgba(0, 0, 0, 0.664);
     right: -400px;
     float: right;
