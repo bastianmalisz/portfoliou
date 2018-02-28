@@ -6,12 +6,12 @@ let open = false;
 function showCloseNav(){
     if(buttonFlag == 0 || buttonFlag%2 == 0 ){
     navBox.style.right = 0;
-    navButton.style.right = 400+"px";
+    navButton.style.right = 250+"px";
     buttonFlag++;
     open = true;
     
     }else{
-        navBox.style.right = -400+"px";
+        navBox.style.right = -250+"px";
         navButton.style.right = 0+"px";
         buttonFlag++,open = false;
         open = false;
