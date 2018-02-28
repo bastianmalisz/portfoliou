@@ -206,7 +206,7 @@ box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.39);
     position:relative;
     width: 65%;
     height: 60%;
-    
+    border: 1px solid #9fa8a3;
     
 }
 .am-desc-line1{
