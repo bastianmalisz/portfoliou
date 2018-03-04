@@ -7,20 +7,21 @@
     <link rel="stylesheet" href = "style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <title>Portfolio 2 v0.2</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Portfolio 2 v0.9</title>
 </head>
 <body>
     <section></section>
     <div class="hamburger__icon">
     
     </div>
-    <div class="navDesktop">
-        <div class="navDesktop__item navDesktop__item--item1">O mnie</div>
-        <div class="navDesktop__item navDesktop__item--item2">Witryny</div>
-        <div class="navDesktop__item navDesktop__item--item3">Aplikacje</div>
-        <div class="navDesktop__item navDesktop__item--item4">Umiejętności</div>
-        <div class="navDesktop__item navDesktop__item--item5">Kotakt</div>
-    </div>
+    <ul class="navDesktop">
+        <li class="navDesktop__item navDesktop__item--item1 "><div class="navDesktop__item--circle"></div><a class="navDesktop__item--link" href="#about-me">O mnie</a></li>
+        <li class="navDesktop__item navDesktop__item--item2 "><div class="navDesktop__item--circle"></div><a class="navDesktop__item--link" href="#websites">Witryny</a></ol>
+        <li class="navDesktop__item navDesktop__item--item3 "><div class="navDesktop__item--circle"></div><a class="navDesktop__item--link" href="#applications">Aplikacje</a></li>
+        <li class="navDesktop__item navDesktop__item--item4 "><div class="navDesktop__item--circle"></div><a class="navDesktop__item--link" href="#skills">Umiejętności</a></li>
+        <li class="navDesktop__item navDesktop__item--item5 "><div class="navDesktop__item--circle"></div><a class="navDesktop__item--link" href="#contact">Kontakt</a></li>
+    </ul>
     <div class="nav">
         <div class="nav__block">
             <div class="nav__icon nav__block--aboutme"></div><div class="nav--name">O mnie</div>
@@ -38,7 +39,7 @@
             <div class="nav__icon nav__icon--contact"></div><div class="nav--name">Kontakt</div>
         </div>
     </div>
-    <section class="ws">
+    <section class="ws" id="welcome-screen">
         <div class="ws__header">
             <!-- <div class = "ws__header--blink"></div> -->Web? 
             <div class= "ws__header--text"></div>
@@ -46,26 +47,97 @@
         </div>
         <div class="ws--welcomeShadow"></div>
         </section>
-    <section class="am">
+    <section class="am" id="about-me">
         <div class="am--img"></div>
-        <div class ="am__desc">
+        <div class ="am__desc " >
             <span class="am__desc--line1">O mnie</span>
+           
         </div>
     </section>
-    <section class="web">
-        <div class="web__website1"></div>
-        <div class="web__website2"></div>
-        <div class="web__website3"></div>
+    <div class ="web__header" >
+            <span class="web__header--span">Wykonane witryny</span>
+           
+        </div>
+    <section class="web" id="websites">
+           
+        <div class="web__website web__website--1">
+            <div class="web__website--desc"></div>
+            <div class="web__website--links"></div>
+        </div>
+        <div class="web__website web__website--2">
+            <div class="web__website--desc"></div>
+            <div class="web__website--links"></div>
+        </div>
+        <div class="web__website web__website--3">
+            <div class="web__website--desc"></div>
+            <div class="web__website--links"></div>
+        </div>
     </section>
-    <section class="app">
+    <div class ="app__header" >
+            <span class="app__header--span">Wykonane aplikacje</span>
+           
+        </div>
+    <section class="app" id="applications">
         <div class="app__application app__application--app1"></div>
         <div class="app__application app__application--app2"></div>
         <div class="app__application app__application--app3"></div>
         <div class="app__application app__application--app4"></div>
     </section>
+    <div class ="skills__header" >
+            <span class="skills__header--span">Umiejętności</span>
+           
+        </div>
+    <section class="skills" id="skills">
+            
+        <div class="skills__row skills__row__good">
+            <div class="skills__row--header">
+                <span>Posługuję się dość pewnie:</span>
+            </div>
+            <i class="fab fa-js fa-2x"></i>
+            
+        </div>
+        <div class="skills__row skills__row__moderate">
+                <div class="skills__row--header">
+                        <span>Znam umairkowanie:</span>
+                    </div>
+        </div>
+        
+        <div class="skills__row skills__row__other">
+                <div class="skills__row--header">
+                        <span>Inne umiejętności:</span>
+                    </div>
+        </div>
+        
+        
+    </section>
+    <div class ="contact__header" >
+            <span class="contact__header--span">Kontakt</span>
+           
+        </div>
+    <section class="contact "  id="contact">
+        <div class="contact__links">
+                <div class="contact__links--github">
+                        <a href="https://github.com/bastianmalisz/">Github</a>
+                </div>
+                
+            <div class="contact__links--email">
+                    <a href="mailto:bastianmaliszewski@protonmail.com?subject=Wiadomość%20z%20Portfolio">bastianmaliszewski@protonmail.com</a>
+            </div>
+        </div>
+        <div class="contact__form">
+            <form>
+                    <p>E-mail:</p>
+                    <input type="email" name="email" class= "contact__form--email">
+                    <p>Wiadomość:</p>
+                    <textarea name="comment" class= "contact__form--textarea"></textarea>
+                    <input type="submit" value="Wyślij" class= "contact__form--submit">
+            </form>
+        </div>
+    </section>
 
     <script src="scripts/showMenu.js"></script>
     <script src="scripts/scrollScripts.js"></script>
     <script src="scripts/headerScript.js"></script>
+    <script src="scripts/appScript.js"></script>
 </body>
 </html>
