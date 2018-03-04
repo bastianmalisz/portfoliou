@@ -192,9 +192,11 @@ height: 100%;
     -webkit-box-shadow: inset -5px 48px 90px 27px rgba(0,0,0,0.147);
 -moz-box-shadow: inset -5px 48px 90px 27px rgba(0,0,00.147);
 box-shadow: inset -5px 48px 90px 27px rgba(0, 0, 0, 0.147);
-background: #757f9a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #757f9a, #d7dde8); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #757f9a, #d7dde8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     
 }
 .ws__header{
@@ -263,7 +265,7 @@ background: #757f9a; /* fallback for old browsers */
 -moz-transform: rotate(174.7deg) scale(1) skew(-5deg) translate(0px);
 -o-transform: rotate(174.7deg) scale(1) skew(-5deg) translate(0px);
 -ms-transform: rotate(174.7deg) scale(1) skew(-5deg) translate(0px);
-box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.863);
+box-shadow: -8px 20px 30px rgba(216, 216, 216, 0.39);
 }
 .welcome__shadow:after{
     content:"";
@@ -288,9 +290,11 @@ box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.863);
 .am--img{
     width: 30%;
     height:90%;
-    background: #757f9a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #757f9a, #d7dde8); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #757f9a, #d7dde8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     box-shadow: 2px 5px 20px rgba(109, 109, 109, 0.637);
 }
 .am--img:after{
@@ -327,14 +331,12 @@ box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.863);
     position: relative;
     display:flex;
     z-index:2;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     border: 2px solid white;
     -webkit-clip-path: polygon(2% 0, 100% 0, 100% 100%, 15% 100%);
     clip-path: polygon(2% 0, 200% 0, 100% 100%, 15% 100%);
 
--webkit-perspective: 200px;
-       -moz-perspective: 200px;
 }
 .web:after{
     content: "";
@@ -347,9 +349,10 @@ box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.863);
     height: 98vh;
     -webkit-clip-path: polygon(2% 0, 100% 0, 100% 100%, 15% 100%);
     clip-path: polygon(2% 0, 200% 0, 100% 100%, 15% 100%);
-    background: #757f9a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #757f9a, #d7dde8); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #757f9a, #d7dde8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #e65c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .web__header,.app__header,.skills__header,.contact__header{
         top:40%;
@@ -387,15 +390,12 @@ box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.863);
     top: 105px;
 }
 .web__website{
+    width: 30%;
+    height: 35%;
     
-    width: 12%;
-    height: 50%;
-    margin-left: 12%;
-    margin-right: 3%;
     background-color: white;
     position: relative;
-    transform: rotateY(45deg);
-    top:15%;
+    
     transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
     box-shadow: 10px 10px 15px rgba(51, 51, 51, 0.726);
     cursor: pointer;
@@ -456,18 +456,21 @@ box-shadow: -8px 20px 30px rgba(83, 83, 83, 0.863);
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position: center;  
+    left: 10%;
 }
 .web__website--2{
     background:url("./img/maliwojownicy.png");
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    left: 40%;
 }
 .web__website--3{
     background:url("./img/lapkoczyn.png");
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    left: 70%;
 }
 /* SEKCJA APEK */
 .app{
