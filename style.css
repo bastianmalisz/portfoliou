@@ -8,6 +8,7 @@ body,html{
      padding:0;
      font-family: 'Press Start 2P', cursive;
      font-size:16px;
+     scroll-behavior: smooth;
 }
 .display-none{
     display:none;
@@ -293,7 +294,8 @@ box-shadow: -8px 20px 30px rgba(216, 216, 216, 0.39);
     background: #1488CC;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
 
     box-shadow: 2px 5px 20px rgba(109, 109, 109, 0.637);
 }
@@ -306,8 +308,22 @@ background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, 
     width: 65%;
     height: 60%;
     border: 1px solid #9fa8a3;
-    box-shadow: 2px 5px 20px rgba(109, 109, 109, 0.253);
+    border-bottom:0;
+    border-left:0;
+    border-right:0;
+    /* box-shadow: 2px 5px 20px rgba(109, 109, 109, 0.253); */
     
+}
+.am__desc > p{
+    font-family: 'Mina', sans-serif;
+    text-justify: auto;
+    padding:3%;
+    width: 90%;
+    height: 90%;
+    top: -15%;
+    left:2%;
+    position: relative;
+    font-size: 1.4em;
 }
 .am__desc--line1{
     display:inline-block;
@@ -328,31 +344,35 @@ background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, 
     width: 85%;
     height: 100vh;
     box-sizing: border-box;
+    
     position: relative;
     display:flex;
     z-index:2;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     border: 2px solid white;
-    -webkit-clip-path: polygon(2% 0, 100% 0, 100% 100%, 15% 100%);
-    clip-path: polygon(2% 0, 200% 0, 100% 100%, 15% 100%);
+    
 
 }
 .web:after{
     content: "";
     box-shadow: 2px 5px 20px rgba(109, 109, 109, 0.253);
+    
     position: absolute;
     z-index: -1;
     top: 10px;
-    left: 10px;
+    
     width: 98%;
+    left: 5%;
+    width: 94%;
     height: 98vh;
-    -webkit-clip-path: polygon(2% 0, 100% 0, 100% 100%, 15% 100%);
-    clip-path: polygon(2% 0, 200% 0, 100% 100%, 15% 100%);
-    background: #e65c00;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 4% 100%);
+clip-path: polygon(0 0, 100% 0%, 100% 100%, 4% 100%);
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .web__header,.app__header,.skills__header,.contact__header{
         top:40%;
@@ -386,28 +406,33 @@ background: linear-gradient(to left, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Fi
     padding: 20px;
     text-align: center;
 }
+.app__header--span{
+    padding: 10px;
+    top: 10px;
+}
 .contact__header--span{
     top: 105px;
 }
 .web__website{
-    width: 30%;
-    height: 35%;
-    
+    top: 15%;
+    width: 25%;
+    height: 60%;
+    left:3%;
     background-color: white;
     position: relative;
     
-    transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-    box-shadow: 10px 10px 15px rgba(51, 51, 51, 0.726);
+    border:10px solid rgba(255, 255, 255, 0.582);
     cursor: pointer;
+    margin: 10px;
     }
     .web__website--desc{
-        width: 70%;
-        height: 20%;
+        width: 90%;
+        height: 30%;
         background-color: white;
         position:relative;
-        top: 101%;
-        left: 15%;
-        box-shadow: 10px 10px 25px rgba(51, 51, 51, 0.726)
+        top: 44%;
+        left: 5%;
+        border: 1px solid #9fa8a346;
         
     }
     .web__website--links{
@@ -415,80 +440,55 @@ background: linear-gradient(to left, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Fi
         height: 10%;
         background-color: white;
         position:relative;
-        top:101%;
+        top:55%;
         left: 15%;
-        border: 1px solid #9fa8a3;
-        box-shadow: 10px 10px 25px rgba(51, 51, 51, 0.726);
+        border: 1px solid #9fa8a346;
+       
     }
-    .duzaStrona{
-        transform: rotateY(0deg)!important;
-        width: 90%!important;
-    height: 40%!important;
+  
     
-    }
-    .malaStrona{
-        width: 12%;
-    height: 50%;
-    margin-left: 12%;
-    margin-right: 3%;
-    background-color: white;
-    position: relative;
-    transform: rotateY(45deg);
-    top:15%;
-    }
-    .duzaApka{
-        transform: rotateY(0deg)!important;
-        width: 80%!important;
-    height: 30%!important;
-    }
-    .malaApka{
-        width: 12%!important;
-        height: 50%!important;
-        margin-left: 12%!important;
-        margin-right: 3%!important;
-        background-color: white;
-        position: relative;
-        transform: rotateY(45deg);
-        top:15%;
-    }
 .web__website--1{
     background:url("./img/kasia-salon.png");
-    background-size:100% 100%;
+    background-size:100% 40%;
     background-repeat: no-repeat;
-    background-position: center;  
-    left: 10%;
+    background-position: top;  
+    background-color: white;
+   
 }
 .web__website--2{
     background:url("./img/maliwojownicy.png");
-    background-size:100% 100%;
+    background-size:100% 40%;
     background-repeat: no-repeat;
-    background-position: center;
-    left: 40%;
+    background-position: top;
+    background-color: white;
+    
 }
 .web__website--3{
     background:url("./img/lapkoczyn.png");
-    background-size:100% 100%;
+    background-size:100% 40%;
     background-repeat: no-repeat;
-    background-position: center;
-    left: 70%;
+    background-position: top;
+    background-color: white;
+    
 }
 /* SEKCJA APEK */
 .app{
+    
     width: 85%;
     height: 100vh;
     box-sizing: border-box;
     position: relative;
     display:flex;
     z-index:2;
+    align-items: flex-start;
+    align-content: center;
     flex-direction: row;
-    justify-content: right;
+    flex-wrap: wrap;
+    justify-content: center;
     border: 2px solid white;
     -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
 clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
 
-
--webkit-perspective: 300px;
-       -moz-perspective: 300px;
     }
 .app:after{
     content: "";
@@ -498,50 +498,160 @@ clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
     left: 6%;
     width: 93%;
     height: 96vh;
-    -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
-    background: #757f9a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #757f9a, #d7dde8); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #757f9a, #d7dde8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
+clip-path: polygon(4% 0, 100% 0%, 100% 100%, 0% 100%);
+    background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .app__application--image1{
+        width: 95%;
+        height: 55%;
+        left: -5%;
+        top: -5%;
+        position: relative;
+        z-index:30;
+        background:url("./img/pogodaimg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: absolute;
+    box-shadow: 20px 20px 20px rgba(94, 90, 90, 0.233);
+    }
+    .app__application--image2{
+        width: 95%;
+        height: 55%;
+        left: -5%;
+        top: -5%;
+        position: relative;
+        
+        background:url("./img/calendarimg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: absolute;
+    box-shadow: 20px 20px 20px rgba(94, 90, 90, 0.233);
+    }
+    .app__application--image3{
+        width: 95%;
+        height: 55%;
+        left: -5%;
+        top: -5%;
+        position: relative;
+        
+        background:url("./img/editorimg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: absolute;
+    box-shadow: 20px 20px 20px rgba(94, 90, 90, 0.233);
+    }
+    .app__application--image4{
+        width: 55%;
+        height: 55%;
+        left: -5%;
+        top: -5%;
+        position: relative;
+        z-index:30;
+        background:url("./img/muzykaimg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: absolute;
+    box-shadow: 20px 20px 20px rgba(94, 90, 90, 0.233);
+    }
+    
+    .app__application__desc{
+        width: 95%;
+        height: 35%;
+        
+        top: 55%;
+        position:relative;
+        left: 2.5%;
+    }
+    .app__application__desc--links--live > a,.app__application__desc--links--github  > a{
+        text-decoration: none;
+        transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        color: rgba(75, 75, 75, 0.747);
+    }
+    .app__application__desc--links--live > a:hover,.app__application__desc--links--github  > a:hover{
+        font-weight:500;
+        text-shadow:0px 2px 1px rgba(0, 0, 0, 0.151);
+    }
+    hr{
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(82, 81, 81, 0.425), rgba(0, 0, 0, 0));
+    }
+    .app__application__desc--techologies{
+        width: 40%;
+        height: 30%;
+        line-height: 1rem;
+        color: rgba(75, 75, 75, 0.747);
+        position:relative;
+        top:0;
+        left:0;
+        
+        font-size:0.9rem;
+        font-family: 'Raleway', sans-serif;
+
+    }
+    .app__application__desc--links{
+        width: 50%;
+        height: 30%;
+        line-height: 1rem;
+        color: rgba(75, 75, 75, 0.747);
+        position:relative;
+        top: -92%;
+        right: -50%;
+        text-align: center;
+        
+        font-size:0.8rem;
+        font-family: 'Krona One', sans-serif;
+    }
+   
+    .app__application__desc--links--live{
+        width:50%;
+        height:100%;
+        font-size:1.5rem;
+        float:left;
+    }
+    .app__application__desc--links--github{
+        width:50%;
+        height:100%;
+        font-size:1.5rem;
+        float:left;
+    }
+    
+    
+    .app__application__desc--describe{
+        width: 80%;
+        height: 60%;
+        line-height: 1rem;
+        color: rgba(43, 43, 43, 0.945);
+        position:relative;
+        top:5%;
+        left:10%;
+        font-weight: 700;
+        font-size:0.8rem;
+        font-family: 'Raleway', sans-serif;
+
     }
 .app__application{
-    width: 10%;
-    height: 50%;
-    margin-left: 11%;
-    margin-right: 4%;
+    left:3%;
+    width: 35%;
+    height: 45%;
+    margin: 5px;
     background-color: white;
     position: relative;
-    transform: rotateY(95deg);
-    top:15%;
+    
+    
     transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-    box-shadow: 10px 10px 15px rgba(51, 51, 51, 0.726);
+    
     cursor: pointer;
 }
-.app__application--app1{
-    background:url("./img/pogodaimg.jpg");
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;  
-    z-index:20;
-}
-.app__application--app2{
-    background:url("./img/calendarimg.jpg");
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;  
-}
-.app__application--app3{
-    background:url("./img/editorimg.png");
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;  
-}
-.app__application--app4{
-    background:url("./img/muzykaimg.jpg");
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;  
-}
+
 /* Sekcja Skilli */
 .skills{
     margin-left:5%;
@@ -552,27 +662,24 @@ clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
-    background-color: #9fa8a3;
-    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
-background: #757F9A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
 
-
-
-
-
-    
+z-index:2;
 }
+
 .skills__row{
+    margin-top:5%;
 width: 70%;
 height: 20%;
-border: 1px solid rgba(99, 99, 99, 0.555);
-background-color: white;
-box-shadow: 10px 10px 15px rgba(51, 51, 51, 0.726);
-display:
+/* border: 1px solid rgba(99, 99, 99, 0.555); */
+/* background-color: white; */
+
+
 }
 .skills__row--header{
 position:relative;
@@ -582,21 +689,89 @@ position:relative;
     background-color: white;
     padding: 20px;
     left: 10%;
+    top: -33px;
 }
+.skills__row__moderate__icon{
+    float: left;
+width: calc(100% /6);
+margin-left: 12.5%;
+height: 80%;
 
+}
+.skills__row__learning__icon {
+    float: left;
+width: calc(100% /6);
+margin-left: 22%;
+height: 80%;
+
+}
 .skills__row__good__icon{
     float: left;
 width: calc(100% / 6);
 margin-left: 2.5%;
 height: 80%;
-border:1px solid black;
+
 }
 .skills__row__good__icon--js{
-background: url("./img/javascript-icon.png")
+background:url("./img/js-icon.png");
+background-size: contain;
+background-position:center;
+background-repeat: no-repeat;
 }
-
-
-
+.skills__row__good__icon--html{
+    background:url("./img/html-icon.png");
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    }
+    .skills__row__good__icon--css{
+        background:url("./img/css-icon.png");
+        background-size: contain;
+        background-position:center;
+        background-repeat: no-repeat;
+        }
+        .skills__row__good__icon--git{
+            background:url("./img/git-icon.png");
+            background-size: contain;
+            background-position:center;
+            background-repeat: no-repeat;
+            }
+            .skills__row__good__icon--bootstrap{
+                background:url("./img/bootstrap-icon.png");
+                background-size: contain;
+                background-position:center;
+                background-repeat: no-repeat;
+                }
+                .skills__row__moderate__icon--photoshop{
+                    background:url("./img/photoshop-icon.png");
+                    background-size: contain;
+                    background-position:center;
+                    background-repeat: no-repeat;
+                }
+                .skills__row__moderate__icon--sass{
+                    background:url("./img/sass-icon.png");
+                    background-size: 100% 80%;
+                    background-position:center;
+                    background-repeat: no-repeat;
+                }
+                .skills__row__moderate__icon--jquery{
+                    background:url("./img/jquery-icon.png");
+                    background-size: 80% 80%;
+                    background-position:center;
+                    background-repeat: no-repeat;
+                }
+                .skills__row__learning__icon--nodejs{
+                    background:url("./img/nodejs-icon.png");
+                    background-size: 80% 80%;
+                    background-position:center;
+                    background-repeat: no-repeat;
+                }
+                .skills__row__learning__icon--react{
+                    background:url("./img/react-icon.png");
+                    background-size: 80% 80%;
+                    background-position:center;
+                    background-repeat: no-repeat;
+                }
 /* Sekcja kontaktu */
 .contact{
     margin-top: 5%;
@@ -609,16 +784,17 @@ background: url("./img/javascript-icon.png")
 }
 
 .contact:after{
-    width: 63%;
-    margin-left:13%;
+    width: 71%;
+    margin-left:9%;
     height: 100%;
     content:"";
     position:absolute;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-background: #757F9A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 48% 100%, 0 90%);
+clip-path: polygon(0 0, 100% 0, 100% 90%, 48% 100%, 0 90%);
+background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 
 
@@ -747,6 +923,11 @@ text-align: center;
     
     }
 
+
+
+
+
+    /* DLa wszystkich wiekszych niz 750 */
 @media screen and (min-width: 750px){
     .hamburger__icon{
         display: none;
@@ -755,30 +936,103 @@ text-align: center;
     .nav{
         display:none;
     }
-    
-    .cube {
-        width: 20%;
-        text-align: center;
-        
-        height: 300px;
-    
-        -webkit-transition: -webkit-transform .63s;
-        transition: transform .63s; /* Animate the transform properties */
-    
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d; /* <-NB */
-        animation: animateCube;
-        /* animation-direction: alternate; */
-        animation-duration: 4s;
-        animation-delay: 1s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-        animation-timing-function: cubic-bezier(1, 0, 0, 1)
-    }
-    
-   
-    
-    
-    
+}
+/* Dla wszystkich Mniejszych niz 750 */
+@media only screen and (max-width: 750px){
 
+    .navDesktop{
+        display: none;
+    }
+}
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* insert styles here */
+}
+ 
+/* (320x480) Smartphone, Portrait */
+@media only screen and (device-width: 320px) and (orientation: portrait) {
+    /* insert styles here */
+}
+ 
+/* (320x480) Smartphone, Landscape */
+@media only screen and (device-width: 480px) and (orientation: landscape) {
+    /* insert styles here */
+}
+ 
+/* (480x800) Android */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    /* insert styles here */
+}
+ 
+/* (640x960) iPhone 4 & 4S */
+@media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
+    /* insert styles here */
+}
+ 
+/* (720x1280) Galaxy Nexus, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    /* insert styles here */
+}
+ 
+/* (720x1280) Galaxy Nexus, Landscape */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) and (orientation: landscape) {
+    /* insert styles here */
+}
+ 
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* insert styles here */
+}
+ 
+/* (768x1024) iPad 1 & 2, Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* insert styles here */
+}
+ 
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* insert styles here */
+}
+ 
+/* (2048x1536) iPad 3 */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
+    /* insert styles here */
+}
+ 
+/* (1280x720) Galaxy Note 2, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    /* insert styles here */
+}
+ 
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1366px) {
+    /* insert styles here */
+    .am__desc > p{
+        font-size: 1.1rem;
+    }
+}
+ 
+/* (1280x1024) SXGA Display */
+@media  screen and (max-width: 1280px) {
+    /* insert styles here */
+}
+ 
+/* (1440x900) WXGA+ Display */
+@media  screen and (max-width: 1440px) {
+    /* insert styles here */
+}
+ 
+/* (1680x1050) WSXGA+ Display */
+@media  screen and (max-width: 1680px) {
+    /* insert styles here */
+}
+ 
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1920px) {
+    /* insert styles here */
+}
+ 
+/* (1600x900) HD+ Display */
+@media  screen and (max-width: 1600px) {
+    /* insert styles here */
 }

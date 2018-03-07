@@ -7,7 +7,10 @@
     <link rel="stylesheet" href = "style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
     <title>Portfolio 2 v0.9</title>
 </head>
 <body>
@@ -51,7 +54,7 @@
         <div class="am--img"></div>
         <div class ="am__desc " >
             <span class="am__desc--line1">O mnie</span>
-           
+            <p>Cześć.<br/> Mam na imię Sebastian i od dzieciaka uwielbiam rozwiazywać problemy. Każdy zna to uczucie, gdy uda się rozwiązać zawiły problem, mnie szczególnie pasonuje to uczucie w kontekście progamowania, a za narzędzie do spełniania się w nim wybrałem Javascript. Jestem głównie samoukiem z podstawami studenckimi, który uwielbia poznawać nowe rzeczy, nowe narzędzia oraz doskonalić te, które już zna. </br>Stawiam na szybki rozwój umiejętności programistyczych, dobrą współpracę nad projektami w IT ale też wiem, że nie można w tym wszystkim zapominać o balansie, czyli pielęgnowaniu pasji, a tą jest u mnie sport, w szczególności piłka nożna ("Vamos Real!").</p>
         </div>
     </section>
     <div class ="web__header" >
@@ -78,10 +81,55 @@
            
         </div>
     <section class="app" id="applications">
-        <div class="app__application app__application--app1"></div>
-        <div class="app__application app__application--app2"></div>
-        <div class="app__application app__application--app3"></div>
-        <div class="app__application app__application--app4"></div>
+        <div class="app__application app__application--app1">
+            <div class = "app__application--image1"></div>
+            <div class="app__application__desc">
+                <div class = "app__application__desc--techologies">JS ES6, speechApi</div>
+                <hr>
+                <div class = "app__application__desc--describe">Aplikacja sprawdzająca pogodę. Korzysta z lokalizacji użytkownika, uruchamia się za pomocą komendy głosowej i czyta pogodę wykorzystując speech api. Działa jedynie na google chrome.</div>
+                <div class = "app__application__desc--links">
+                    <div class="app__application__desc--links--live"><a href="#">Live</a></div>
+                    <div class="app__application__desc--links--github"><a href="#">Github</a></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="app__application app__application--app2">
+                <div class = "app__application--image2"></div>
+                <div class="app__application__desc">
+                    <div class = "app__application__desc--techologies">JS, jQuery</div>
+                    <hr>
+                    <div class = "app__application__desc--describe">Aplikacja kalendarz. Pozwala na zapisanie wydarzeń w odpowiednich wybranych dniach i zapisanie ich w localstorage. Zbudowane od zera bez użycia dodatkowych bibliotek.</div>
+                    <div class = "app__application__desc--links">
+                        <div class="app__application__desc--links--live"><a href="#">Live</a></div>
+                        <div class="app__application__desc--links--github"><a href="#">Github</a></div>
+                    </div>
+                </div>
+        </div>
+        <div class="app__application app__application--app3">
+                <div class = "app__application--image3"></div>
+                <div class="app__application__desc">
+                    <div class = "app__application__desc--techologies">JS</div>
+                    <hr>
+                    <div class = "app__application__desc--describe">Aplikacja tekst edytor. Pozwala na edytowanie tekstu używając kilku opcji. Możliwość zapisu tekstu w localstorage lub pobrania pliku tekstowego na dysk.</div>
+                    <div class = "app__application__desc--links">
+                        <div class="app__application__desc--links--live"><a href="#">Live</a></div>
+                        <div class="app__application__desc--links--github"><a href="#">Github</a></div>
+                    </div>
+                </div>
+        </div>
+        <div class="app__application app__application--app4">
+                <div class = "app__application--image4"></div>
+                <div class="app__application__desc">
+                    <div class = "app__application__desc--techologies">JS ES6, Web audio api</div>
+                    <hr>
+                    <div class = "app__application__desc--describe">Aplikacja player muzyczny. Pozwala na odtworzenie muzyki i wyświetla wizualizację opartą o częstotliwość granej piosenki.</div>
+                    <div class = "app__application__desc--links">
+                        <div class="app__application__desc--links--live"><a href="#">Live</a></div>
+                        <div class="app__application__desc--links--github"><a href="#">Github</a></div>
+                    </div>
+                </div>
+        </div>
     </section>
     <div class ="skills__header" >
             <span class="skills__header--span">Umiejętności</span>
@@ -93,7 +141,11 @@
             <div class="skills__row--header">
                 <span>Posługuję się dość pewnie:</span>
             </div>
-            <div class="skills__row__good__icon skills__row__good__icon--js"></div>
+            <div class="skills__row__good__icon skills__row__good__icon--js">
+                
+
+
+            </div>
             <div class="skills__row__good__icon skills__row__good__icon--css"></div>
             <div class="skills__row__good__icon skills__row__good__icon--html"></div>
             <div class="skills__row__good__icon skills__row__good__icon--git"></div>
@@ -102,14 +154,20 @@
         </div>
         <div class="skills__row skills__row__moderate">
                 <div class="skills__row--header">
-                        <span>Znam umairkowanie:</span>
+                        <span>Znam umiarkowanie:</span>
                     </div>
+                    <div class="skills__row__moderate__icon skills__row__moderate__icon--jquery"></div>
+                    
+            <div class="skills__row__moderate__icon skills__row__moderate__icon--photoshop"></div>        
+            <div class="skills__row__moderate__icon skills__row__moderate__icon--sass"></div>
         </div>
         
-        <div class="skills__row skills__row__other">
+        <div class="skills__row skills__row__learning">
                 <div class="skills__row--header">
-                        <span>Inne umiejętności:</span>
+                        <span>W trakcie nauki:</span>
                     </div>
+                    <div class="skills__row__learning__icon skills__row__learning__icon--react"></div>        
+                    <div class="skills__row__learning__icon skills__row__learning__icon--nodejs"></div>
         </div>
         
         
@@ -125,15 +183,15 @@
                 </div>
                 
             <div class="contact__links--email">
-                    <a href="mailto:bastianmaliszewski@protonmail.com?subject=Wiadomość%20z%20Portfolio">bastianmaliszewski@protonmail.com</a>
+                    <a href="mailto:maliszewskiseba@protonmail.com?subject=Wiadomość%20z%20Portfolio">maliszewskiseba@protonmail.com</a>
             </div>
         </div>
         <div class="contact__form">
             <form>
                     <p>E-mail:</p>
-                    <input type="email" name="email" class= "contact__form--email">
+                    <input type="email" name="email" class= "contact__form--email" required>
                     <p>Wiadomość:</p>
-                    <textarea name="comment" class= "contact__form--textarea"></textarea>
+                    <textarea name="comment" class= "contact__form--textarea" required></textarea>
                     <input type="submit" value="Wyślij" class= "contact__form--submit">
             </form>
         </div>

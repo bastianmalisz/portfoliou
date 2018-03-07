@@ -28,31 +28,31 @@ document.addEventListener("scroll",function(){
    // Ustawienia kolorowania kulek w zaleznosci od sekcji w ktorej jest scroll
         //1 kropka: kropka przy o mnie
    if(wScroll>=document.querySelector(".am").offsetTop && wScroll<document.querySelector(".web").offsetTop){
-    navDesktopCircle[0].style.backgroundColor = "rgb(134, 143, 167)";
+    navDesktopCircle[0].style.backgroundColor = "rgb(41, 58, 180)";
    }else{
     navDesktopCircle[0].style.backgroundColor = "white";
    }
         //2 kropka: kropka przy websites
     if(wScroll>=document.querySelector(".web").offsetTop && wScroll<document.querySelector(".app").offsetTop){
-        navDesktopCircle[1].style.backgroundColor = "	rgb(134, 143, 167)";
+        navDesktopCircle[1].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[1].style.backgroundColor = "white";
        }
          //3 kropka: kropka przy websites
     if(wScroll>=document.querySelector(".app").offsetTop && wScroll<document.querySelector(".skills").offsetTop){
-        navDesktopCircle[2].style.backgroundColor = "	rgb(134, 143, 167)";
+        navDesktopCircle[2].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[2].style.backgroundColor = "white";
        }
          //4 kropka: kropka przy websites
     if(wScroll>=document.querySelector(".skills").offsetTop && wScroll<document.querySelector(".contact").offsetTop){
-        navDesktopCircle[3].style.backgroundColor = "	rgb(134, 143, 167)";
+        navDesktopCircle[3].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[3].style.backgroundColor = "white";
        }
          //5 kropka: kropka przy websites
     if(wScroll>=document.querySelector(".contact").offsetTop ){
-        navDesktopCircle[4].style.backgroundColor = "	rgb(134, 143, 167)";
+        navDesktopCircle[4].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[4].style.backgroundColor = "white";
        }
