@@ -9,6 +9,7 @@ body,html{
      font-family: 'Press Start 2P', cursive;
      font-size:16px;
      scroll-behavior: smooth;
+     width: 100vw;
 }
 .display-none{
     display:none;
@@ -38,6 +39,7 @@ body,html{
 }
 ul,li{
     list-style-type:none;
+    
 }
 .navDesktop__item--circle{
 width: 20px;
@@ -55,12 +57,14 @@ li > a{
     position:relative;
     list-style-type:none;
     text-decoration: none;
+    color: black;
 }
 .navDesktop:hover{
     opacity: 1;
 }
 .navDesktop__item > a:focus  { 
-    background-color: yellow;
+    background-color: #2B32B2;
+    box-shadow: 0px 2px 10px rgba(95, 94, 94, 0.863);
     opacity: 1;
 }
 .navDesktop__item--link{
@@ -299,6 +303,14 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
 
     box-shadow: 2px 5px 20px rgba(109, 109, 109, 0.637);
 }
+#about-me > div.am--img > img{
+    width:80%;
+    height:100%;
+    position: relative;
+    top: 20%;
+    left:10%;
+   
+}
 .am--img:after{
 
 }
@@ -348,8 +360,9 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
     position: relative;
     display:flex;
     z-index:2;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: 2px solid white;
     
 
@@ -414,9 +427,10 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 4% 100%);
     top: 105px;
 }
 .web__website{
-    top: 15%;
-    width: 25%;
-    height: 60%;
+    top: 5%;
+    font-family: 'Mina', sans-serif;
+    width: 47%;
+    height: 23%;
     left:3%;
     background-color: white;
     position: relative;
@@ -425,52 +439,73 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 4% 100%);
     cursor: pointer;
     margin: 10px;
     }
-    .web__website--desc{
-        width: 90%;
-        height: 30%;
-        background-color: white;
-        position:relative;
-        top: 44%;
-        left: 5%;
-        border: 1px solid #9fa8a346;
+    .web__website__image{
+        width: 50%;
+        height:70%;
+        position:absolute;
+        top: -15%;
+        left: -5%;
         
+        box-shadow: 10px 15px 20px rgba(95, 95, 95, 0.418);
     }
-    .web__website--links{
-        width: 70%;
-        height: 10%;
-        background-color: white;
-        position:relative;
-        top:55%;
-        left: 15%;
-        border: 1px solid #9fa8a346;
-       
+    .web__website__description{
+        width: 50%;
+        height:60%;
+        position: relative;
+        left: 50%;
+        bottom: -15%;
+        
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        color: rgba(51, 51, 51, 0.932);
     }
-  
+    .web__website__techologies{
+        width: 30%;
+        height:20%;
+        position: relative;
+        left: 0%;
+        bottom: -2%;
+        
+        font-weight: 300;
+        font-size:0.9rem;
+        color: rgba(75, 75, 75, 0.747);
+    }
+    .web__website__links{
+        width: 30%;
+        height:20%;
+        position: relative;
+        left: 60%;
+        bottom: 10%;
+        
+        text-align:center;
+    }
+    .web__website__links > a{
+        text-decoration: none;
+        font-size:1.3rem;
+        transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        color: rgba(75, 75, 75, 0.747);
+
+    }
+    .web__website__image--webimage1{
+        background: url("./img/kasia-salon.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    } 
+    .web__website__image--webimage2{
+        background: url("./img/maliwojownicy.png");
+        background-size:100% 100%;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .web__website__image--webimage3{
+        background: url("./img/lapkoczyn.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
     
-.web__website--1{
-    background:url("./img/kasia-salon.png");
-    background-size:100% 40%;
-    background-repeat: no-repeat;
-    background-position: top;  
-    background-color: white;
-   
-}
-.web__website--2{
-    background:url("./img/maliwojownicy.png");
-    background-size:100% 40%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: white;
-    
-}
-.web__website--3{
-    background:url("./img/lapkoczyn.png");
-    background-size:100% 40%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: white;
-    
-}
+
 /* SEKCJA APEK */
 .app{
     
@@ -594,7 +629,7 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
         left:0;
         
         font-size:0.9rem;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Mina', sans-serif;
 
     }
     .app__application__desc--links{
@@ -608,7 +643,7 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
         text-align: center;
         
         font-size:0.8rem;
-        font-family: 'Krona One', sans-serif;
+        font-family: 'Mina', sans-serif;
     }
    
     .app__application__desc--links--live{
@@ -633,9 +668,9 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
         position:relative;
         top:5%;
         left:10%;
-        font-weight: 700;
+        font-weight: 500;
         font-size:0.8rem;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Mina', sans-serif;
 
     }
 .app__application{
@@ -946,7 +981,48 @@ text-align: center;
 }
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* insert styles here */
+    html,body{
+        width: 100vh;;
+    }
+    .am__desc--line1{
+        font-size:1rem;
+    }
+    .web__header--span,.app__header--span,.skills__header--span, .contact__header--span{
+        font-size:1rem;
+        left:27%;
+        padding:10px;
+    }
+    .ws{
+        width:100%;
+    }
+    .hamburger__icon {
+        
+        right: 22%;
+}
+.ws--welcomeShadow {
+    width: 100vh;
+}
+.ws__header--text{
+    width: 100%;
+    position: relative;
+    left: 31%;
+}
+.am {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.am__desc {
+    top: 13%;
+}
+.am__desc > p{
+    font-size: 1rem;
+    top: -29%;
+    line-height: 1.3rem;
+
 }
  
 /* (320x480) Smartphone, Portrait */
@@ -1007,10 +1083,7 @@ text-align: center;
 /* (1366x768) WXGA Display */
 @media  screen and (max-width: 1366px) {
     /* insert styles here */
-    .am__desc > p{
-        font-size: 1.1rem;
-    }
-}
+   
  
 /* (1280x1024) SXGA Display */
 @media  screen and (max-width: 1280px) {
