@@ -1,0 +1,70 @@
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1920px) {
+    .contact__header--span{
+        left: 58%;
+        font-size:4rem;
+        top: 163px;
+    }
+    .contact__links--email > a{
+        font-size:2.5rem;
+    }
+    .contact__links--github > a{
+        font-size:3.5rem;
+    }
+    form >p{
+        font-size:2rem;
+    }
+    .contact__form--email{
+        font-size:2.5rem;
+    }
+    .contact__form--textarea{
+        font-size:2rem;
+        height: 250px;
+    }
+    .contact__form--submit{
+        font-size:2rem;
+    }
+    .skills__row--header > span{
+        font-size:2.2rem;
+    }
+    .app__application__desc--techologies{
+        font-size:1.3rem
+    }
+    .app__application__desc--links--live,.app__application__desc--links--github{
+        font-size:2.2rem
+    }
+    .app__application__desc--describe{
+        font-size:1.3rem;
+        line-height: 1.4rem;
+    }
+    .web__website__techologies{
+        font-size:1.3rem;
+    }
+    .web__website__links > a{
+        font-size:2rem;
+
+    }
+    .web__website__description{
+        font-size:1.4rem;
+        line-height: 1.4rem;
+    }
+    .web__header--span{
+        left: 50%;
+        font-size:3rem;
+    }
+    .am__desc > p {
+        font-size:1.8rem;
+    }
+    .navDesktop{
+        font-size:1.5rem;
+    }
+    .navDesktop__item--link{
+        margin-left:20px;
+        margin-top:3px;
+    }
+    .navDesktop__item--circle{
+        left: 13px;
+        width: 25px;
+    height: 25px;
+    }
+}

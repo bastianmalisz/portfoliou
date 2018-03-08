@@ -1,0 +1,18 @@
+@media  screen and (max-width: 1366px) {
+    /* insert styles here */
+    .am__desc > p{
+        top: -32%;
+        font-family: 'Coda', sans-serif;
+        font-size:1.4rem;
+    }
+    .web__header--span{
+        left: 50%;
+        font-size:3em;
+    }
+    .navDesktop{
+        font-size:.9rem;
+    }
+    .am--img{
+        height:100%;
+    }
+}

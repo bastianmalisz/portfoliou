@@ -1,0 +1,71 @@
+.contact__header--span{
+    left: 54%;
+    font-size:3rem;
+    top: 113px;
+}
+.contact__links--email > a{
+    font-size:2rem;
+}
+.contact__links--github > a{
+    font-size:3rem;
+}
+form >p{
+    font-size:1.5rem;
+}
+.contact__form--email{
+    font-size:2rem;
+}
+.contact__form--textarea{
+    font-size:1.6rem;
+    height: 150px;
+}
+.contact__form--submit{
+    font-size:1.5rem;
+}
+.skills__row--header > span{
+    font-size:1.7rem;
+}
+.app__application__desc--techologies{
+    font-size:1.3rem
+}
+.app__application__desc--links--live,.app__application__desc--links--github{
+    font-size:1.9rem
+}
+.app__application__desc--describe{
+    font-size:1.1rem;
+    line-height: 1.2rem;
+}
+.web__website__techologies{
+    font-size:1.1rem;
+}
+.web__website__links > a{
+    font-size:2rem;
+
+}
+.web__website__description{
+    font-size:1.2rem;
+    line-height: 1.2rem;
+}
+.web__header--span{
+    left: 50%;
+    font-size:3rem;
+}
+.am__desc > p {
+    font-size:1.6rem;
+        top: -25%;
+}
+.am--img {
+    height: 85%;
+}
+.navDesktop{
+    font-size:1rem;
+}
+.navDesktop__item--link{
+    margin-left:5px;
+    margin-top:3px;
+}
+.navDesktop__item--circle{
+    left: -5px;
+    width: 15px;
+height: 15px;
+}

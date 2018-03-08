@@ -6,7 +6,7 @@ body,html{
      */
      margin:0;
      padding:0;
-     font-family: 'Press Start 2P', cursive;
+     font-family: 'Coda', sans-serif;
      font-size:16px;
      scroll-behavior: smooth;
     
@@ -205,17 +205,19 @@ background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, 
     
 }
 .ws__header{
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Amatic SC', cursive;
+
     position:relative;
     width: 90%;
     height: 50%;
     top: 19%;
     left: -20%;
-    font-size:3em;
+    font-size:8em;
+    letter-spacing: 5px;
     color: white;
     /* text-align: center; */
-    line-height:1.5em;
-    text-shadow: 0px 3px 1px black;
+    line-height:8rem;
+    text-shadow: 0px 4px 2px black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -307,7 +309,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
     width:80%;
     height:100%;
     position: relative;
-    top: 20%;
+    top: 22%;
     left:10%;
    
 }
@@ -339,13 +341,13 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
 }
 .am__desc--line1{
     display:inline-block;
-    font-size: 3em;
-    font-family: 'Press Start 2P', cursive;
-    left: 30%;
+    font-size: 4em;
+    font-family: 'Coda', sans-serif;
+    left: 38%;
     position:relative;
     background-color: white;
     z-index:3;
-    top:-50px;
+    top: -76px;
     padding:30px;
     text-align: center;
     
@@ -398,20 +400,23 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 4% 100%);
 .web__header--span{
     display: inline-block;
     font-size: 2em;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Coda', sans-serif;
     left: 56%;
     position: relative;
     background-color: white;
     z-index: 3;
     top: 55px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 .app__header--span,.skills__header--span,.contact__header--span{
     display: inline-block;
-    font-size: 2em;
-    font-family: 'Press Start 2P', cursive;
-    left:56%;
+    font-size: 3em;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: 'Coda', sans-serif;
+
+
+    left:50%;
     position: relative;
     background-color: white;
     z-index: 3;
@@ -421,7 +426,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 4% 100%);
 }
 .app__header--span{
     padding: 10px;
-    top: 10px;
+    top: 34px;
 }
 .contact__header--span{
     top: 105px;
@@ -676,8 +681,8 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
 .app__application{
     left:3%;
     width: 35%;
-    height: 45%;
-    margin: 5px;
+    height: 41%;
+    margin: 10px;
     background-color: white;
     position: relative;
     
@@ -711,6 +716,9 @@ z-index:2;
     margin-top:5%;
 width: 70%;
 height: 20%;
+font-family: 'Coda', sans-serif;
+font-size:1.5em;
+
 /* border: 1px solid rgba(99, 99, 99, 0.555); */
 /* background-color: white; */
 
@@ -722,7 +730,7 @@ position:relative;
 .skills__row--header > span {
     position:relative;
     background-color: white;
-    padding: 20px;
+    padding: 5px;
     left: 10%;
     top: -33px;
 }
@@ -918,7 +926,7 @@ background-color: transparent;
     transition: .2s ease-in all;
     cursor: pointer;
     top: 20px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Coda', sans-serif;
     color:white;
 }
 .contact__links{
@@ -1284,7 +1292,8 @@ form > p{
  
 /* (1024x768) iPad 1 & 2, XGA */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* insert styles here */
+   
+
 }
  
 /* (768x1024) iPad 1 & 2, Portrait */
@@ -1310,6 +1319,10 @@ form > p{
 /* (1366x768) WXGA Display */
 @media  screen and (max-width: 1366px) {
     /* insert styles here */
+    .am__desc > p{
+        top: -32%;
+        font-family: 'Coda', sans-serif;
+    }
    
  
 /* (1280x1024) SXGA Display */
@@ -1319,7 +1332,9 @@ form > p{
  
 /* (1440x900) WXGA+ Display */
 @media  screen and (max-width: 1440px) {
-    /* insert styles here */
+    .app__application__desc--describe{
+        font-size:1rem;
+    }
 }
  
 /* (1680x1050) WSXGA+ Display */
