@@ -9,7 +9,7 @@ body,html{
      font-family: 'Press Start 2P', cursive;
      font-size:16px;
      scroll-behavior: smooth;
-     width: 100vw;
+    
 }
 .display-none{
     display:none;
@@ -32,7 +32,7 @@ body,html{
     right: 0%;
     opacity:0.9;
     top: 55%;
-    font-size: 0.85em;
+    font-size: 0.55em;
     border-left: 1px solid rgba(97, 96, 96, 0.479);
     transition: .4s cubic-bezier(0.215, 0.610, 0.355, 1) all;
     
@@ -1232,13 +1232,19 @@ form > p{
     }
 }
  
-/* Zwykle smartphony */
-@media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
-    /* insert styles here */
-    .am__desc > p{
-        font-size:1.2rem;
+/* Zwykle smartphony  w landscape */
+@media (orientation : landscape){
+    .ws__header{
+        font-size: 1em;
+    }
+    .am__desc--line1{
+        font-size: 1em;
     }
 }
+    
+
+
+
  
 /* (720x1280) Galaxy Nexus, WXGA */
 @media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
