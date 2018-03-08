@@ -8,13 +8,14 @@
     width: 107%;
 }
 .ws__header{
-    font-size:1.4rem;
+    font-size:3rem;
+    line-height: 3rem;
 }
 .am__desc--line1{
-    font-size:1.2rem;
-    top: -20px;
+    font-size: 1.5rem;
+    top: -28px;
     padding: 10px;
-    left: 31%;
+    left: 40%;
 }
 .am__desc > p{
     line-height: 1rem;
@@ -64,6 +65,8 @@ bottom: -18%;
 .web__website__description{
 left: 31%;
 bottom: 4%;
+font-size:0.9rem;
+line-height:0.9rem;
 }
 .web__website__links{
 left: 77%;
