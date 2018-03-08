@@ -989,47 +989,199 @@ text-align: center;
         font-size:1rem;
         left:27%;
         padding:10px;
+        
+    }
+    .web__header--span{
+        top: -20px;
+    }
+    .web__website{
+        width: 80%;
+    }
+    .web__website__techologies{
+        font-size:0.7rem;
+    }
+    .web__website__description{
+        bottom:6%;
+        font-size:0.7rem;
+        line-height: 0.8rem;
+    }
+    .web__website__links > a{
+        font-size:1rem;
+        line-height: 0.8rem;
+    }
+    .web__website__links{
+        bottom:0;
     }
     .ws{
         
     }
     .hamburger__icon {
-        right: 12%;
-    top: 15%;
+        border:0;
 }
 .ws__header{
     font-size:1.5rem;
     top: 26%;
 }
 .ws--welcomeShadow{
-    height: 18vh;
+    height: 19vh;
 }
 .ws__header--text{
     width: 100%;
     position: relative;
-    left: 11%;
+    left: 24%;
 }
 .am {
-    
-    height: 100vh;
+    top:10%;
+    width: 95%;
+    height: 85vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+.am--img {
+    width: 53%;
+    height: 82%;
+}
 .am__desc {
-    top: 13%;
+    top: 6%;
+}
+.am__desc--line1 {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: 'Press Start 2P', cursive;
+    left: 22%;
+    position: relative;
+    background-color: white;
+    z-index: 3;
+    top: -17px;
+    padding: 9px;
+    text-align: center;
 }
 .am__desc > p{
-    font-size: 1rem;
+    font-size: 0.7rem;
     top: -29%;
-    line-height: 1.3rem;
+    line-height: 0.7rem;
+    top: -10%;
+    width:100%;
+    left: -2%;
+}
+.web {
+    width: 100%;
+    top: -19vw;
+}
+.app {
+    width: 100%;
+    margin-top:-10%;
+}
+.app__application {
+    left: 4%;
+    width: 41%;
+    height: 38%;
+    margin: 3px;
+}
+.app__application__desc--describe{
+    display:none;
+}
+.app__application__desc--techologies {
+    width: 100%;
+    font-size:0.7rem;
+}
+.app__application__desc--links{
+    width: 90%;
+    height: 30%;
+    top: 20%;
+    right:0;
+    
+}
+.app__application__desc--links--live{
+    font-size:1rem;
+}
+.app__application__desc--links--github{
+    font-size:1rem;
+}
+.skills {
+    margin-left: 6%;
+    width: 92%;
+    height:80vh;
+}
+.skills__row{
+   
+    width: 85%;
+    top: 4%;
+    position: relative;
+}
+.skills__row__good__icon,.skills__row__moderate__icon{
+    top:30%;
+    position: relative;
+}
+
+
+.skills__row--header > span{
+    font-size:0.5rem;
+    padding: 5px;
+    top:0px;
+    left:0;
+}
+.skills__row--header{
 
 }
 .contact__links{
     font-size:0.3rem;
 }
- 
+.contact{
+    width: 83%;
+    margin-left: 11%;
+    height:50vh;
+    margin-top:30vh;
+    
+}
+.contact:after {
+    width: 83%;
+    margin-left: 0%
+}
+.contact__header--span {
+    font-size: 1rem;
+    left: 50%;
+    padding: 10px;
+    top: 40px;
+}
+.contact__links{
+    width: 90%;
+    left:5%;
+    position: relative;
+    top: -42%;
+}
+.contact__links--github > a{
+    font-size:0.7rem;
+}
+.contact__form{
+    width:95%;
+    position:relative;
+    left:2.5%;
+    height:40%;
+    top: -20vh
+}
+form > p{
+    width: 80%;
+    position:relative;
+    left:10%;
+    font-size:1rem;
+}
+.contact__form--textarea{
+    width: 70%;
+    left:15%;
+
+}
+.contact__form--email {
+    width: 70%;
+    left:15%
+}
+.contact__form--submit{
+    width: 50%;
+    left:25%;
+    font-size: .9rem;
+}
 /* (320x480) Smartphone, Portrait */
 @media only screen and (device-width: 320px) and (orientation: portrait) {
     /* insert styles here */
@@ -1041,14 +1193,19 @@ text-align: center;
 }
  
 /* (480x800) Android */
-@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
-    /* insert styles here */
+@media only screen and (min-device-width: 360px) and (max-device-width: 420px) {
+    .am__desc > p{
+        font-size:.9rem;
+        line-height:.9rem;
+    }
 }
  
 /* (640x960) iPhone 4 & 4S */
 @media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
     /* insert styles here */
-    
+    .am__desc > p{
+        font-size:1.2rem;
+    }
 }
  
 /* (720x1280) Galaxy Nexus, WXGA */
