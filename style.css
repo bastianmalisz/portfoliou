@@ -89,7 +89,7 @@ height: 100%;
 .nav{
     position:fixed;
     width: 250px;
-    height: 50vh;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.664);
     right: -400px;
     float: right;
@@ -1192,15 +1192,47 @@ form > p{
     /* insert styles here */
 }
  
-/* (480x800) Android */
+/* Zwykle smartphony */
 @media only screen and (min-device-width: 360px) and (max-device-width: 420px) {
     .am__desc > p{
         font-size:.9rem;
         line-height:.9rem;
     }
+    .web__website__description{
+        font-size:.9rem;
+        line-height:.9rem;
+        margin-top:5px;
+    }
+    .web__website__techologies{
+        font-size:.9rem;
+        line-height:.9rem;
+        margin-top:5px;
+    }
+    .web__website__links > a{
+        font-size:1.4rem;
+    }
+    .app{
+        height: 80vh;
+    }
+    .app__application__desc--techologies{
+        font-size:0.85rem;
+    }
+    .contact__links{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        top: -29vh;
+    }
+    .contact__links--email{
+        font-size:0.55rem;
+        left:0;
+    }
+    .contact__links--github{
+        width:100%;
+    }
 }
  
-/* (640x960) iPhone 4 & 4S */
+/* Zwykle smartphony */
 @media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
     /* insert styles here */
     .am__desc > p{
