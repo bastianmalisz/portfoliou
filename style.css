@@ -1233,12 +1233,15 @@ form > p{
 }
  
 /* Zwykle smartphony  w landscape */
-@media (orientation : landscape){
+@media only screen and (min-device-width: 720px) and (max-device-width: 840) and (orientation : landscape){
     .ws__header{
         font-size: 1em;
     }
     .am__desc--line1{
         font-size: 1em;
+    }
+    .am__desc > p{
+        font-size:.3em;
     }
 }
     
@@ -1248,13 +1251,36 @@ form > p{
  
 /* (720x1280) Galaxy Nexus, WXGA */
 @media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
-    /* insert styles here */
+    /* insert styles here */.am__desc > p{
+        font-size:.3em;
+    }
 }
  
 /* (720x1280) Galaxy Nexus, Landscape */
 @media only screen and (min-device-width: 720px) and (max-device-width: 1280px) and (orientation: landscape) {
     /* insert styles here */
+    .ws__header{
+        font-size: 1em;
+    }
+    .am__desc--line1{
+        font-size: 1em;
+    }
+    .am__desc > p{
+        font-size:.3em;
+    }
 }
+@media screen and (min-width:640px) and (max-width:959px) {
+    .ws__header{
+        font-size: 1em;
+    }
+    .am__desc--line1{
+        font-size: 1em;
+    }
+    .am__desc > p{
+        font-size:.3em;
+    }
+}
+
  
 /* (1024x768) iPad 1 & 2, XGA */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {

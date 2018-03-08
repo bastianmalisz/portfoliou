@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
+    <link rel="stylesheet" href="styleLandscape.css">
 
     <title>Portfolio 2 v0.9</title>
 </head>
@@ -210,7 +210,17 @@
             </form>
         </div>
     </section>  
+<script>
+    function sprawdzPozycje(){
+if (window.matchMedia("(orientation: portrait)").matches) {
+   console.log("portret");
+}
 
+if (window.matchMedia("(orientation: landscape)").matches) {
+    console.log("landscape");
+}
+}
+</script>
     <script src="scripts/showMenu.js"></script>
     <script src="scripts/scrollScripts.js"></script>
     <script src="scripts/headerScript.js"></script>
