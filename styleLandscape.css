@@ -17,8 +17,8 @@
     left: 31%;
 }
 .am__desc > p{
-    line-height: 0.8rem;
-    font-size: .8rem;
+    line-height: 1rem;
+    font-size: 1rem;
     left: 0%;
     width: 100%;
     top: -20%;
@@ -27,7 +27,7 @@
     width: 100%;
 }
 .am__desc {
-    top: 13%;
+        top: 20%;
 }
 .am--img {
 width: 30%;
