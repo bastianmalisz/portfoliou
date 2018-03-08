@@ -191,7 +191,7 @@ height: 100%;
     /* top: 5vw; */
     width: 100%;
     right:3%;
-    height: 70vh;
+    height: 65vh;
     
 
     -webkit-box-shadow: inset -5px 48px 90px 27px rgba(0,0,0,0.147);
@@ -1044,7 +1044,7 @@ text-align: center;
     height: 82%;
 }
 .am__desc {
-    top: 6%;
+    top: 12%;
 }
 .am__desc--line1 {
     display: inline-block;
