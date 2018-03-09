@@ -71,24 +71,24 @@
     top: 12%;
     }
     .am__desc--line1 {
-    display: inline-block;
-    font-size: 0.8rem;
-    font-family: 'Press Start 2P', cursive;
-    left: 22%;
+        display: inline-block;
+    font-size: 1.2rem;
+    
+    left: 25%;
     position: relative;
     background-color: white;
     z-index: 3;
-    top: -17px;
+    top: -25px;
     padding: 9px;
     text-align: center;
     }
     .am__desc > p{
-    font-size: 0.6rem;
+        font-size: 0.7rem;
     top: -29%;
-    line-height: 0.7rem;
+    line-height: 0.8rem;
     top: -10%;
-    width:100%;
-    left: -2%;
+    width: 100%;
+    left: 3%;
     }
     .web {
     width: 100%;
