@@ -67,7 +67,16 @@ width: 53%;
 height: 82%;
 }
 .am__desc {
-top: 12%;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: 'Press Start 2P', cursive;
+    left: 27%;
+    position: relative;
+    background-color: white;
+    z-index: 3;
+    top: -24px;
+    padding: 9px;
+    text-align: center;
 }
 .am__desc--line1 {
 display: inline-block;
