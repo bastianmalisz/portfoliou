@@ -130,6 +130,8 @@ height: 100%;
     cursor: pointer;
     transition: right 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     z-index: 100;
+    border: none;
+    outline:none;
     
 }
 .close{
@@ -138,50 +140,13 @@ height: 100%;
     width: 50px;
     height: 50px;
 }
-.nav__icon--aboutme{
-    background: url("./img/about-me.png");
-    background-size: 90% 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 30%;
-    height:100%;
-}
-.nav__icon--skills{
-    background: url("./img/ideaspng.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 30%;
-    height:100%;
-}
-.nav__icon--websites{
-    background: url("./img/witrynypng.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 20%;
-    height:80%;
-}
-.nav__icon--apps{
-    background: url("./img/aplikacjepng.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 20%;
-    height:80%;
-}
-.nav__icon--contact{
-    background: url("./img/kontaktpng.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 20%;
-    height:80%;
-}
+
 .nav--name{
-    width: 60%;
+    width: 100%;
     height:25%;
     text-align: center;
+    font-size:1.5rem;
+    font-family: 'Coda', sans-serif;
 }
 
 /* WELCOME SCREEN */
