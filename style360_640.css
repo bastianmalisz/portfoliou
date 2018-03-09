@@ -8,6 +8,9 @@
     padding:10px;
     
 }
+.app__header--span{
+top: -8px;
+}
 .web__header--span{
     top: -37px;
     left:50%;
@@ -79,12 +82,13 @@ padding: 9px;
 text-align: center;
 }
 .am__desc > p{
-font-size: 0.8rem;
-top: -29%;
-line-height: 0.8rem;
-top: -10%;
-width:100%;
-left: -2%;
+    font-size: 0.9rem;
+    top: -29%;
+    line-height: 0.9rem;
+    top: -10%;
+    width: 100%;
+    left: 2%;
+
 }
 .web {
 width: 100%;
