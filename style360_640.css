@@ -67,28 +67,19 @@ width: 53%;
 height: 82%;
 }
 .am__desc {
+top: 12%;
+}
+.am__desc--line1 {
     display: inline-block;
     font-size: 1.3rem;
     font-family: 'Press Start 2P', cursive;
-    left: 27%;
+    left: 30%;
     position: relative;
     background-color: white;
     z-index: 3;
-    top: -24px;
+    top: -26px;
     padding: 9px;
     text-align: center;
-}
-.am__desc--line1 {
-display: inline-block;
-font-size: 0.8rem;
-font-family: 'Press Start 2P', cursive;
-left: 22%;
-position: relative;
-background-color: white;
-z-index: 3;
-top: -17px;
-padding: 9px;
-text-align: center;
 }
 .am__desc > p{
     font-size: 0.9rem;
