@@ -1,5 +1,5 @@
 /* (1600x900) HD+ Display */
-@media  screen and (max-width: 1600px) {
+@media  screen and (max-width: 1600px) and (min-width: 1500px)  {
     .contact__header--span{
         left: 58%;
         font-size:4rem;

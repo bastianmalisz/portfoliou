@@ -1,5 +1,5 @@
 /* (1280x720) Galaxy Note 2, WXGA */
-@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+@media only screen and (min-device-width: 720px) and (max-device-width: 1279px) {
     .contact__header--span{
         left: 58%;
         font-size:2rem;

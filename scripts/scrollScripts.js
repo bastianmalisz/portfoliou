@@ -4,15 +4,21 @@ const navDesktopCircle = document.querySelectorAll(".navDesktop__item--circle");
 
 document.addEventListener("scroll",function(){
     let wScroll = window.scrollY;
-    napis.style.transform = "translateY("+wScroll/2+"px)";
+    
 
-    if(wScroll > window.innerHeight* 0.55){
-        for(let i = 0; i< navDesktopItem.length; i++){
-        navDesktopItem[i].style.color = "black";}
+    if(wScroll>= document.querySelector(".am").offsetTop){
+        napis.style.display = "none";
     }else{
-        for(let i = 0; i< navDesktopItem.length; i++){
-            navDesktopItem[i].style.color = "white";}
+        napis.style.display = "flex";
+        napis.style.transform = "translateY("+wScroll/2+"px)";
     }
+    // if(wScroll > window.innerHeight* 0.65){
+    //     for(let i = 0; i< navDesktopItem.length; i++){
+    //     navDesktopItem[i].style.color = "black";}
+    // }else{
+    //     for(let i = 0; i< navDesktopItem.length; i++){
+    //         navDesktopItem[i].style.color = "white";}
+    // }
 
     // Ustawienia, zeby menu sie rozszerzylo
    if(wScroll>=document.querySelector(".am").offsetTop-100) {
@@ -33,7 +39,7 @@ document.addEventListener("scroll",function(){
     navDesktopCircle[0].style.backgroundColor = "white";
    }
         //2 kropka: kropka przy websites
-    if(wScroll>=document.querySelector(".web").offsetTop && wScroll<document.querySelector(".app").offsetTop){
+    if(wScroll>=document.querySelector(".web").offsetTop && wScroll<document.querySelector(".app").offsetTop-(50)){
         navDesktopCircle[1].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[1].style.backgroundColor = "white";
@@ -45,13 +51,13 @@ document.addEventListener("scroll",function(){
         navDesktopCircle[2].style.backgroundColor = "white";
        }
          //4 kropka: kropka przy websites
-    if(wScroll>=document.querySelector(".skills").offsetTop && wScroll<document.querySelector(".contact").offsetTop){
+    if(wScroll>=document.querySelector(".skills").offsetTop && wScroll<document.querySelector(".contact").offsetTop-(30)){
         navDesktopCircle[3].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[3].style.backgroundColor = "white";
        }
          //5 kropka: kropka przy websites
-    if(wScroll>=document.querySelector(".contact").offsetTop ){
+    if(wScroll>=document.querySelector(".contact").offsetTop -(30) ){
         navDesktopCircle[4].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[4].style.backgroundColor = "white";
