@@ -21,7 +21,7 @@ document.addEventListener("scroll",function(){
     // }
 
     // Ustawienia, zeby menu sie rozszerzylo
-   if(wScroll>=document.querySelector(".am").offsetTop-100) {
+   if(wScroll>=document.querySelector(".am").offsetTop) {
     
     document.querySelector(".navDesktop").style.height="75%";;
     document.querySelector(".navDesktop").style.top="12.5%";
@@ -39,7 +39,7 @@ document.addEventListener("scroll",function(){
     navDesktopCircle[0].style.backgroundColor = "white";
    }
         //2 kropka: kropka przy websites
-    if(wScroll>=document.querySelector(".web").offsetTop && wScroll<document.querySelector(".app").offsetTop-(50)){
+    if(wScroll>=document.querySelector(".web").offsetTop && wScroll<document.querySelector(".app").offsetTop){
         navDesktopCircle[1].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[1].style.backgroundColor = "white";
@@ -51,13 +51,13 @@ document.addEventListener("scroll",function(){
         navDesktopCircle[2].style.backgroundColor = "white";
        }
          //4 kropka: kropka przy websites
-    if(wScroll>=document.querySelector(".skills").offsetTop && wScroll<document.querySelector(".contact").offsetTop-(30)){
+    if(wScroll>=document.querySelector(".skills").offsetTop && wScroll<document.querySelector(".contact").offsetTop){
         navDesktopCircle[3].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[3].style.backgroundColor = "white";
        }
          //5 kropka: kropka przy websites
-    if(wScroll>=document.querySelector(".contact").offsetTop -(30) ){
+    if(wScroll>=document.querySelector(".contact").offsetTop ){
         navDesktopCircle[4].style.backgroundColor = "	rgb(41, 58, 180)";
        }else{
         navDesktopCircle[4].style.backgroundColor = "white";
