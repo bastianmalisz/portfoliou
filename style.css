@@ -174,7 +174,7 @@ background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, 
     
 }
 .ws__header{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Coda', sans-serif;
     z-index: 0;
     position:relative;
     width: 90%;
@@ -300,7 +300,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
     
 }
 .am__desc > p{
-    font-family: 'Mina', sans-serif;
+    font-family: 'Coda', sans-serif;
     text-justify: auto;
     padding:3%;
     width: 90%;
@@ -404,7 +404,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 4% 100%);
 }
 .web__website{
     top: 5%;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Coda', sans-serif;
     width: 47%;
     height: 23%;
     left:3%;
@@ -619,7 +619,7 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
         text-align: center;
         
         font-size:0.8rem;
-        font-family: 'Mina', sans-serif;
+        font-family: 'Coda', sans-serif;
     }
    
     .app__application__desc--links--live{
@@ -646,7 +646,7 @@ background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Fi
         left:10%;
         font-weight: 500;
         font-size:0.8rem;
-        font-family: 'Mina', sans-serif;
+        font-family: 'Coda', sans-serif;
 
     }
 .app__application{
@@ -1029,7 +1029,7 @@ text-align: center;
 .am__desc--line1 {
     display: inline-block;
     font-size: 0.8rem;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Coda', sans-serif;
     left: 22%;
     position: relative;
     background-color: white;
