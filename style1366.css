@@ -1,4 +1,4 @@
-@media  screen and (max-width: 1366px) {
+@media  screen and (max-width: 1366px) and (min-width: 1300) {
     /* insert styles here */
     .am__desc > p{
         top: -32%;
@@ -14,5 +14,10 @@
     }
     .am--img{
         height:100%;
+    }
+    .ws__header{
+        font-size: 2.2rem;
+        top: 17%;
+        line-height:2.2rem;
     }
 }
