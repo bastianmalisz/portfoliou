@@ -7,9 +7,9 @@ document.addEventListener("scroll",function(){
     
 
     if(wScroll>= document.querySelector(".am").offsetTop){
-        napis.style.display = "none";
+        napis.style.opacity =0;
     }else{
-        napis.style.display = "flex";
+        napis.style.opacity =1;
         napis.style.transform = "translateY("+wScroll/2+"px)";
     }
     // if(wScroll > window.innerHeight* 0.65){
